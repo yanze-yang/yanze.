@@ -1,3 +1,7 @@
+title = "My New Hugo Site"
+theme = "tale"
+languageCode = "en-us"
+
 [build]
 publish = "public"
 command = "hugo --gc --minify"
@@ -28,7 +32,3 @@ HUGO_VERSION = "0.55.6"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
-
-title = "My New Hugo Site"
-theme = "tale"
-languageCode = "en-us"
