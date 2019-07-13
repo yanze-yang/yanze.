@@ -1,6 +1,6 @@
 ---
 title: "How to call child component method from parent? "
-date: 2019-july-01
+date: 2019-07-01
 draft: false
 tags: ["JavaScript"]
 ---
@@ -133,3 +133,8 @@ class Parent extends React.Component {
   }
 }
 ```
+
+### 🧩More Reference Links
+
+- [How do you trigger a function defined in the child component of a parent function in React?](https://www.quora.com/How-do-you-trigger-a-function-defined-in-the-child-component-of-a-parent-function-in-React)
+- [React: Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)

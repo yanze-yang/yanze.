@@ -1,6 +1,6 @@
 ---
 title: "How to filter an array with another array"
-date: 2019-feb-05
+date: 2019-02-05
 draft: false
 tags: ["JavaScript"]
 ---
