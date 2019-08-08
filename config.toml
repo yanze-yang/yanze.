@@ -1,5 +1,5 @@
 title = "yanze.pro"
-theme = "tale"
+theme = "hyde"
 languageCode = "en-us"
 
 [build]
