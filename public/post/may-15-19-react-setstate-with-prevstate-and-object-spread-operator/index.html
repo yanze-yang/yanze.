@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>React setState() with prevState and Object Spread Operator &middot; yanze.pro</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="css/poole.css">
+  <link type="text/css" rel="stylesheet" href="css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-08 ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href=""><h1>yanze.pro</h1></a>
+      <p class="lead">
+      An elegant open source and mobile first dddd for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2019. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>React setState() with prevState and Object Spread Operator</h1>
+  <time datetime=2019-03-15T00:00:00Z class="post-date">Fri, Mar 15, 2019</time>
+  
+
+<p>There are some gotchas with React&rsquo;s setState(). For example, state updates may be asynchronous: React sometimes batches multiple setState() calls for performance reasons.</p>
+
+<p>Make sure to set state correctly and to use the latest state. Here are some examples from the official documentation:</p>
+
+<pre><code class="language-js">// Wrong
+this.setState({
+  counter: this.state.counter + this.props.increment
+});
+</code></pre>
+
+<p>Instead you should use a function which takes the previous state as a first argument.</p>
+
+<pre><code class="language-js">// Correct
+this.setState((state, props) =&gt; ({
+  counter: state.counter + props.increment
+}));
+</code></pre>
+
+<p>Let&rsquo;s say you have an object in your state and want to use the object spread syntax:</p>
+
+<pre><code class="language-js">// This is the state of your React component
+this.state = {
+  person: {
+    firstName: &quot;&quot;,
+    secondName: &quot;&quot;
+  }
+};
+</code></pre>
+
+<p>Now you want to change the state:</p>
+
+<pre><code class="language-js">this.setState(prevState =&gt; ({
+  person: {
+    ...prevState.person,
+    firstName: &quot;Tom&quot;,
+    secondName: &quot;Jerry&quot;
+  }
+}));
+</code></pre>
+
+<p>This also works:</p>
+
+<pre><code class="language-js">this.setState(() =&gt; ({
+  person: {
+    ...this.state.person,
+    firstName: &quot;Tom&quot;,
+    secondName: &quot;Jerry&quot;
+  }
+}));
+</code></pre>
+
+<p>Using functions is now the recommended way to set state in React.</p>
+
+<h3 id="reference-links">🧩Reference Links</h3>
+
+<ul>
+<li><a href="https://www.rockyourcode.com/react-set-state-with-prev-state-and-object-spread-operator">React setState() with prevState and Object Spread Operator</a></li>
+<li><a href="https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1">Using a function in setState instead of an object</a></li>
+</ul>
+
+</div>
+
+
+    </main>
+
+    
+  </body>
+</html>

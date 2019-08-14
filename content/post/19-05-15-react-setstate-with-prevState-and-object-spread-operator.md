@@ -2,6 +2,7 @@
 title: "React setState() with prevState and Object Spread Operator"
 date: 2019-03-15
 draft: false
+summary: "There are some gotchas with React's setState(). For example, state updates may be asynchronous: React sometimes batches multiple setState() calls for performance reasons."
 tags: ["JavaScript"]
 ---
 

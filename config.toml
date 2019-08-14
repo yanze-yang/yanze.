@@ -2,6 +2,9 @@ title = "yanze.pro"
 theme = "hyde"
 languageCode = "en-us"
 
+[params]
+  themeColor = "theme-base-08"
+
 [build]
 publish = "public"
 command = "hugo --gc --minify"
