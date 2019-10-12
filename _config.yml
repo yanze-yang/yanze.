@@ -1,18 +1,18 @@
 # General Settings
-name: Steve Austin
-job_title: UI/UX Engineer
-email: youremail@gmail.com
-description: I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.
-avatar: https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg
+name: yanze yang
+job_title: Software Developer
+email: 
+description: 
+avatar: /avatar.png
 favicon: /favicon.ico
 twitter_handler: your_handler
 analytics_code: UA-XXXXXXX-2
-disqus: your_disqus_site
+disqus: 
 
 # Social Accounts
 social_networks:
--  { name: facebook, url: 'http://facebook.com' }
--  { name: twitter, url: 'http://twitter.com' }
+# -  { name: facebook, url: 'http://facebook.com' }
+# -  { name: twitter, url: 'http://twitter.com' }
 -  { name: instagram, url: '' }
 -  { name: google-plus, url: '' }
 -  { name: linkedin, url: '' }
@@ -40,9 +40,9 @@ social_networks:
 # Modules Settings
 show_categories: 1
 show_tags: 1
-show_email: 1
-show_rss: 1
-show_comments: 1
+show_email: 0
+show_rss: 0
+show_comments: 0
 show_menu: 1
 fixed_sidebar: 1
 

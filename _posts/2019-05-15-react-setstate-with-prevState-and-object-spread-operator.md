@@ -1,11 +1,19 @@
 ---
-title: "React setState() with prevState and Object Spread Operator"
+layout: post
 date: 2019-03-15
-draft: false
-tags: ["JavaScript"]
+title:  "React setState() with prevState and Object Spread Operator"
+tags: 
+- JavaScript
 ---
 
+🧩Reference Links:
+
+- [React setState() with prevState and Object Spread Operator](https://www.rockyourcode.com/react-set-state-with-prev-state-and-object-spread-operator)
+- [Using a function in setState instead of an object](https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1)
+
 There are some gotchas with React's setState(). For example, state updates may be asynchronous: React sometimes batches multiple setState() calls for performance reasons.
+
+<!--more-->
 
 Make sure to set state correctly and to use the latest state. Here are some examples from the official documentation:
 
@@ -62,8 +70,3 @@ this.setState(() => ({
 ```
 
 Using functions is now the recommended way to set state in React.
-
-### 🧩Reference Links
-
-- [React setState() with prevState and Object Spread Operator](https://www.rockyourcode.com/react-set-state-with-prev-state-and-object-spread-operator)
-- [Using a function in setState instead of an object](https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1)

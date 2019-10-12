@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> yanze yang &mdash; Software Developer </title>
-    <meta property="og:title" content=" yanze yang &mdash; Software Developer " />
-    <meta name="twitter:title" content=" yanze yang &mdash; Software Developer " />
+    <title>React setState() with prevState and Object Spread Operator | yanze yang &mdash; Software Developer </title>
+    <meta property="og:title" content="React setState() with prevState and Object Spread Operator | yanze yang &mdash; Software Developer " />
+    <meta name="twitter:title" content="React setState() with prevState and Object Spread Operator | yanze yang &mdash; Software Developer " />
 
     <meta name="description" content="">
     <meta name="description" property="og:description" content="" />
@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@your_handler" />
     
-    <meta property="og:url" content="http://localhost:4000/" />
+    <meta property="og:url" content="http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -96,7 +96,7 @@
     
     <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html">
 
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 </head>
@@ -122,7 +122,7 @@
     
         
         <div class="mainmenu">
-            <a href="http://localhost:4000" class="active">Home</a>
+            <a href="http://localhost:4000" >Home</a>
             
                 
             
@@ -163,71 +163,13 @@
 </div>
 
 
-                
-<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-        <ul>
-            <li><time datetime="2019-10-10T00:00:00+13:00" itemprop="datePublished">10 Oct, 2019</time></li>
-            
-        </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/how-to-update-nested-state-properties-in-react.html">How to update nested state properties in React</a></h2>
-    </header>
-
-    <div class="post-content">
-        <p>🧩Reference links:</p>
-
-<ul>
-  <li><a href="https://medium.com/@rykyou/how-state-updates-are-merged-in-react-e07fc669fec2">How State Updates Are Merged in React</a></li>
-  <li><a href="https://stackoverflow.com/questions/43040721/how-to-update-nested-state-properties-in-react">How to Update Nested State Properties in React</a></li>
-</ul>
-
-
-
-        
-            <p><a href="http://localhost:4000/how-to-update-nested-state-properties-in-react.html" role="button">Read More</a></p>
-        
-    </div>
-
-    <footer class="post-footer">
-        <!-- <div class="share">Share
-            <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How to update nested state properties in React&p[summary]=🧩Reference links:
-
-
-  How State Updates Are Merged in React
-  How to Update Nested State Properties in React
-
-
-&p[url]=http://localhost:4000/how-to-update-nested-state-properties-in-react.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/how-to-update-nested-state-properties-in-react.html&text=🧩Reference links:
-
-
-  How State Updates Are Merged in React
-  How to Update Nested State Properties in React
-
-
-&hashtags=JavaScript," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
-            </ul>
-        </div> -->
-        
-        <div class="tags">
-            <ul>
-                
-                <li><a href="http://localhost:4000/tag/JavaScript">JavaScript</a></li>
-                
-            </ul>
-        </div>
-        
-    </footer>
-</article>
-
-<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <ul>
             <li><time datetime="2019-03-15T00:00:00+13:00" itemprop="datePublished">15 Mar, 2019</time></li>
             
         </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html">React setState() with prevState and Object Spread Operator</a></h2>
+        <h2 itemprop="name headline">React setState() with prevState and Object Spread Operator</h2>
     </header>
 
     <div class="post-content">
@@ -240,15 +182,63 @@
 
 <p>There are some gotchas with React’s setState(). For example, state updates may be asynchronous: React sometimes batches multiple setState() calls for performance reasons.</p>
 
+<!--more-->
 
+<p>Make sure to set state correctly and to use the latest state. Here are some examples from the official documentation:</p>
 
-        
-            <p><a href="http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html" role="button">Read More</a></p>
-        
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Wrong</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+  <span class="na">counter</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">counter</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">increment</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Instead you should use a function which takes the previous state as a first argument.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Correct</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">((</span><span class="nx">state</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
+  <span class="na">counter</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">props</span><span class="p">.</span><span class="nx">increment</span>
+<span class="p">}));</span>
+</code></pre></div></div>
+
+<p>Let’s say you have an object in your state and want to use the object spread syntax:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// This is the state of your React component</span>
+<span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">person</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">firstName</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+    <span class="na">secondName</span><span class="p">:</span> <span class="s2">""</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>Now you want to change the state:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="nx">prevState</span> <span class="o">=&gt;</span> <span class="p">({</span>
+  <span class="na">person</span><span class="p">:</span> <span class="p">{</span>
+    <span class="p">...</span><span class="nx">prevState</span><span class="p">.</span><span class="nx">person</span><span class="p">,</span>
+    <span class="na">firstName</span><span class="p">:</span> <span class="s2">"Tom"</span><span class="p">,</span>
+    <span class="na">secondName</span><span class="p">:</span> <span class="s2">"Jerry"</span>
+  <span class="p">}</span>
+<span class="p">}));</span>
+</code></pre></div></div>
+
+<p>This also works:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">({</span>
+  <span class="na">person</span><span class="p">:</span> <span class="p">{</span>
+    <span class="p">...</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">person</span><span class="p">,</span>
+    <span class="na">firstName</span><span class="p">:</span> <span class="s2">"Tom"</span><span class="p">,</span>
+    <span class="na">secondName</span><span class="p">:</span> <span class="s2">"Jerry"</span>
+  <span class="p">}</span>
+<span class="p">}));</span>
+</code></pre></div></div>
+
+<p>Using functions is now the recommended way to set state in React.</p>
+
     </div>
 
     <footer class="post-footer">
-        <!-- <div class="share">Share
+        <div class="share">Share
             <ul class="social-networks">
                 <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=React setState() with prevState and Object Spread Operator&p[summary]=🧩Reference Links:
 
@@ -257,7 +247,7 @@
   Using a function in setState instead of an object
 
 
-Th...&p[url]=http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+Th...&p[url]=http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
                 <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html&text=🧩Reference Links:
 
 
@@ -267,7 +257,7 @@ Th...&p[url]=http://localhost:4000/react-setstate-with-prevState-and-object-spre
 
 Th...&hashtags=JavaScript," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
-        </div> -->
+        </div>
         
         <div class="tags">
             <ul>
@@ -279,61 +269,6 @@ Th...&hashtags=JavaScript," rel="noreferrer" target="_blank" onclick="window.ope
         
     </footer>
 </article>
-
-<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-        <ul>
-            <li><time datetime="2019-02-05T00:00:00+13:00" itemprop="datePublished">5 Feb, 2019</time></li>
-            
-        </ul>
-        <h2 itemprop="name headline"><a href="http://localhost:4000/how-to-filter-an-array-with-another-array.html">How to filter an array with another array</a></h2>
-    </header>
-
-    <div class="post-content">
-        <p>🧩Reference link:</p>
-
-<ul>
-  <li><a href="https://www.freecodecamp.org/forum/t/how-to-filter-an-array-with-another-array/139352">How to filter an array with another array</a></li>
-</ul>
-
-
-
-        
-            <p><a href="http://localhost:4000/how-to-filter-an-array-with-another-array.html" role="button">Read More</a></p>
-        
-    </div>
-
-    <footer class="post-footer">
-        <!-- <div class="share">Share
-            <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How to filter an array with another array&p[summary]=🧩Reference link:
-
-
-  How to filter an array with another array
-
-
-&p[url]=http://localhost:4000/how-to-filter-an-array-with-another-array.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/how-to-filter-an-array-with-another-array.html&text=🧩Reference link:
-
-
-  How to filter an array with another array
-
-
-&hashtags=JavaScript," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
-            </ul>
-        </div> -->
-        
-        <div class="tags">
-            <ul>
-                
-                <li><a href="http://localhost:4000/tag/JavaScript">JavaScript</a></li>
-                
-            </ul>
-        </div>
-        
-    </footer>
-</article>
-
 
 
             </main>

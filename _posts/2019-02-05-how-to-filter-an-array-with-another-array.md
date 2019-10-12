@@ -1,15 +1,17 @@
 ---
 layout: post
-date: 2019-02-05 23:56
+date: 2019-02-05
 title:  "How to filter an array with another array"
 mood: happy
-category: 
+tags: 
 - JavaScript
 ---
 
-## Reference link
+🧩Reference link:
 
-[How to filter an array with another array](https://www.freecodecamp.org/forum/t/how-to-filter-an-array-with-another-array/139352)
+- [How to filter an array with another array](https://www.freecodecamp.org/forum/t/how-to-filter-an-array-with-another-array/139352)
+
+<!--more-->
 
 ## Example 1
 
