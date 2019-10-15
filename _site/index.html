@@ -136,6 +136,8 @@
             
                 
             
+                
+            
         </div>
         
     
@@ -214,6 +216,90 @@
             <ul>
                 
                 <li><a href="http://localhost:4000/tag/JavaScript">JavaScript</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-09-04T00:00:00+12:00" itemprop="datePublished">4 Sep, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/how-to-configure-prettier.html">How to Configure Prettier</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>🧩Reference Links:</p>
+
+<ul>
+  <li><a href="https://prettier.io/docs/en/configuration.html">Prettier Docs - Configuration File</a></li>
+  <li><a href="https://www.fiznool.com/blog/2018/12/07/vscode---typescript---prettier--happy-developer/">VSCode + TypeScript + Prettier = Happy Developer</a></li>
+</ul>
+
+<h2 id="configuration-file">Configuration File</h2>
+
+<p>Prettier uses cosmiconfig for configuration file support. This means you can configure prettier via (in order of precedence):</p>
+
+<ul>
+  <li>A <code class="highlighter-rouge">"prettier"</code> key in your package.json file.</li>
+  <li>A <code class="highlighter-rouge">.prettierrc</code> file, written in JSON or YAML, with optional extensions: <code class="highlighter-rouge">.json/.yaml/.yml</code> (without extension takes precedence).</li>
+  <li>A <code class="highlighter-rouge">.prettierrc.js</code> or <code class="highlighter-rouge">prettier.config.js</code> file that exports an object.</li>
+  <li>A <code class="highlighter-rouge">.prettierrc.toml</code> file, written in TOML (the <code class="highlighter-rouge">.toml</code> extension is required).
+The configuration file will be resolved starting from the location of the file being formatted, and searching up the file tree until a config file is (or isn’t) found.</li>
+</ul>
+
+<h2 id="basic-configuration">Basic Configuration</h2>
+
+<p>JSON:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"trailingComma"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es5"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"tabWidth"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"semi"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"singleQuote"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+
+
+        
+            <p><a href="http://localhost:4000/how-to-configure-prettier.html" role="button">Read More</a></p>
+        
+    </div>
+
+    <footer class="post-footer">
+        <!-- <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How to Configure Prettier&p[summary]=🧩Reference Links:
+
+
+  Prettier Docs - Configuration File
+  VSCode + TypeScript + Prettier = Happy Developer
+
+
+Configuration File
+
+Prettie...&p[url]=http://localhost:4000/how-to-configure-prettier.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/how-to-configure-prettier.html&text=🧩Reference Links:
+
+
+  Prettier Docs - Configuration File
+  VSCode + TypeScript + Prettier = Happy Developer
+
+
+Configuration File
+
+Prettie...&hashtags=Prettier," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div> -->
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/Prettier">Prettier</a></li>
                 
             </ul>
         </div>

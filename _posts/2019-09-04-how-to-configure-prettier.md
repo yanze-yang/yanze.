@@ -24,7 +24,7 @@ The configuration file will be resolved starting from the location of the file b
 ## Basic Configuration
 
 JSON:
-```js
+```json
 {
   "trailingComma": "es5",
   "tabWidth": 4,
@@ -32,6 +32,8 @@ JSON:
   "singleQuote": true
 }
 ```
+
+<!--more-->
 
 JS:
 ```js
@@ -45,7 +47,7 @@ module.exports = {
 ```
 
 YAML:
-```js
+```yaml
 # .prettierrc or .prettierrc.yaml
 trailingComma: "es5"
 tabWidth: 4
@@ -54,7 +56,7 @@ singleQuote: true
 ```
 
 TOML:
-```js
+```toml
 # .prettierrc.toml
 trailingComma = "es5"
 tabWidth = 4
