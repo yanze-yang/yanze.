@@ -4,6 +4,7 @@ date: 2019-03-15
 title:  "React setState() with prevState and Object Spread Operator"
 tags: 
 - JavaScript
+- React
 ---
 
 🧩Reference Links:

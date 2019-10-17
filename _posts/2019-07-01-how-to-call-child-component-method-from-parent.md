@@ -4,6 +4,7 @@ date: 2019-07-01
 title:  "How to call child component method from parent?"
 tags: 
 - JavaScript
+- React
 ---
 
 [Prevent using string references (react/no-string-refs)](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)

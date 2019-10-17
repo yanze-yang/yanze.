@@ -4,6 +4,7 @@ date: 2019-10-10
 title:  "How to update nested state properties in React"
 tags: 
 - JavaScript
+- React
 ---
 
 🧩Reference links:

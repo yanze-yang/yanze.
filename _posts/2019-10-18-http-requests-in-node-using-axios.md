@@ -3,7 +3,8 @@ layout: post
 date: 2019-10-18
 title:  "asycn/await & Promises: HTTP requests in Node using Axios"
 tags: 
-- Prettier
+- JavaScript
+- Axios
 ---
 
 🧩Reference Link:
