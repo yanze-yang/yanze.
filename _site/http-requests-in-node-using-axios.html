@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>React setState() with prevState and Object Spread Operator | yanze yang &mdash; Software Developer </title>
-    <meta property="og:title" content="React setState() with prevState and Object Spread Operator | yanze yang &mdash; Software Developer " />
-    <meta name="twitter:title" content="React setState() with prevState and Object Spread Operator | yanze yang &mdash; Software Developer " />
+    <title>asycn/await &amp; Promises: HTTP requests in Node using Axios | yanze yang &mdash; Software Developer </title>
+    <meta property="og:title" content="asycn/await &amp; Promises: HTTP requests in Node using Axios | yanze yang &mdash; Software Developer " />
+    <meta name="twitter:title" content="asycn/await &amp; Promises: HTTP requests in Node using Axios | yanze yang &mdash; Software Developer " />
 
     <meta name="description" content="">
     <meta name="description" property="og:description" content="" />
@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@your_handler" />
     
-    <meta property="og:url" content="http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html" />
+    <meta property="og:url" content="http://localhost:4000/http-requests-in-node-using-axios.html" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -96,7 +96,7 @@
     
     <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
-    <link rel="canonical" href="http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html">
+    <link rel="canonical" href="http://localhost:4000/http-requests-in-node-using-axios.html">
 
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 </head>
@@ -172,96 +172,97 @@
                 <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
         <ul>
-            <li><time datetime="2019-03-15T00:00:00+13:00" itemprop="datePublished">15 Mar, 2019</time></li>
+            <li><time datetime="2019-10-18T00:00:00+13:00" itemprop="datePublished">18 Oct, 2019</time></li>
             
         </ul>
-        <h2 itemprop="name headline">React setState() with prevState and Object Spread Operator</h2>
+        <h2 itemprop="name headline">asycn/await & Promises: HTTP requests in Node using Axios</h2>
     </header>
 
     <div class="post-content">
-        <p>🧩Reference Links:</p>
+        <p>🧩Reference Link:</p>
 
 <ul>
-  <li><a href="https://www.rockyourcode.com/react-set-state-with-prev-state-and-object-spread-operator">React setState() with prevState and Object Spread Operator</a></li>
-  <li><a href="https://medium.com/@wisecobbler/using-a-function-in-setstate-instead-of-an-object-1f5cfd6e55d1">Using a function in setState instead of an object</a></li>
+  <li><a href="https://flaviocopes.com/node-axios/">HTTP requests in Node using Axios</a></li>
 </ul>
 
-<p>There are some gotchas with React’s setState(). For example, state updates may be asynchronous: React sometimes batches multiple setState() calls for performance reasons.</p>
+<h2 id="get-requests">GET requests</h2>
+<p>One convenient way to use Axios is to use the modern (ES2017) async/await syntax.</p>
+
+<p>This Node.js example queries the <a href="https://dog.ceo/">Dog API</a> to retrieve a list of all the dogs breeds, using axios.get(), and it counts them:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'axios'</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">getBreeds</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kr">await</span> <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://dog.ceo/api/breeds/list/all'</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">countBreeds</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">breeds</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">getBreeds</span><span class="p">()</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">breeds</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Got </span><span class="p">${</span><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">breeds</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">message</span><span class="p">).</span><span class="nx">length</span><span class="p">}</span><span class="s2"> breeds`</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">countBreeds</span><span class="p">()</span>
+</code></pre></div></div>
 
 <!--more-->
 
-<p>Make sure to set state correctly and to use the latest state. Here are some examples from the official documentation:</p>
+<p>If you don’t want to use async/await you can use the Promises syntax:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Wrong</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
-  <span class="na">counter</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">counter</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">increment</span>
-<span class="p">});</span>
-</code></pre></div></div>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'axios'</span><span class="p">)</span>
 
-<p>Instead you should use a function which takes the previous state as a first argument.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Correct</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">((</span><span class="nx">state</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">({</span>
-  <span class="na">counter</span><span class="p">:</span> <span class="nx">state</span><span class="p">.</span><span class="nx">counter</span> <span class="o">+</span> <span class="nx">props</span><span class="p">.</span><span class="nx">increment</span>
-<span class="p">}));</span>
-</code></pre></div></div>
-
-<p>Let’s say you have an object in your state and want to use the object spread syntax:</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// This is the state of your React component</span>
-<span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">person</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">firstName</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
-    <span class="na">secondName</span><span class="p">:</span> <span class="s2">""</span>
+<span class="kd">const</span> <span class="nx">getBreeds</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://dog.ceo/api/breeds/list/all'</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
   <span class="p">}</span>
-<span class="p">};</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">countBreeds</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">breeds</span> <span class="o">=</span> <span class="nx">getBreeds</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+          <span class="s2">`Got </span><span class="p">${</span><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">message</span><span class="p">).</span><span class="nx">length</span><span class="p">}</span><span class="s2"> breeds`</span>
+        <span class="p">)</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="nx">countBreeds</span><span class="p">()</span>
 </code></pre></div></div>
-
-<p>Now you want to change the state:</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="nx">prevState</span> <span class="o">=&gt;</span> <span class="p">({</span>
-  <span class="na">person</span><span class="p">:</span> <span class="p">{</span>
-    <span class="p">...</span><span class="nx">prevState</span><span class="p">.</span><span class="nx">person</span><span class="p">,</span>
-    <span class="na">firstName</span><span class="p">:</span> <span class="s2">"Tom"</span><span class="p">,</span>
-    <span class="na">secondName</span><span class="p">:</span> <span class="s2">"Jerry"</span>
-  <span class="p">}</span>
-<span class="p">}));</span>
-</code></pre></div></div>
-
-<p>This also works:</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">({</span>
-  <span class="na">person</span><span class="p">:</span> <span class="p">{</span>
-    <span class="p">...</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">person</span><span class="p">,</span>
-    <span class="na">firstName</span><span class="p">:</span> <span class="s2">"Tom"</span><span class="p">,</span>
-    <span class="na">secondName</span><span class="p">:</span> <span class="s2">"Jerry"</span>
-  <span class="p">}</span>
-<span class="p">}));</span>
-</code></pre></div></div>
-
-<p>Using functions is now the recommended way to set state in React.</p>
 
     </div>
 
     <footer class="post-footer">
         <div class="share">Share
             <ul class="social-networks">
-                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=React setState() with prevState and Object Spread Operator&p[summary]=🧩Reference Links:
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=asycn/await & Promises: HTTP requests in Node using Axios&p[summary]=🧩Reference Link:
 
 
-  React setState() with prevState and Object Spread Operator
-  Using a function in setState instead of an object
+  HTTP requests in Node using Axios
 
 
-Th...&p[url]=http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
-                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/react-setstate-with-prevState-and-object-spread-operator.html&text=🧩Reference Links:
+GET requests
+One convenient way to use Axios is to use the modern (ES2017) async...&p[url]=http://localhost:4000/http-requests-in-node-using-axios.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/http-requests-in-node-using-axios.html&text=🧩Reference Link:
 
 
-  React setState() with prevState and Object Spread Operator
-  Using a function in setState instead of an object
+  HTTP requests in Node using Axios
 
 
-Th...&hashtags=JavaScript,React," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+GET requests
+One convenient way to use Axios is to use the modern (ES2017) async...&hashtags=JavaScript,Axios," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
             </ul>
         </div>
         
@@ -270,7 +271,7 @@ Th...&hashtags=JavaScript,React," rel="noreferrer" target="_blank" onclick="wind
                 
                 <li><a href="http://localhost:4000/tag/JavaScript">JavaScript</a></li>
                 
-                <li><a href="http://localhost:4000/tag/React">React</a></li>
+                <li><a href="http://localhost:4000/tag/Axios">Axios</a></li>
                 
             </ul>
         </div>

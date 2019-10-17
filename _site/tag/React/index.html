@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Posts Tagged - JavaScript | yanze yang &mdash; Software Developer </title>
-    <meta property="og:title" content="Posts Tagged - JavaScript | yanze yang &mdash; Software Developer " />
-    <meta name="twitter:title" content="Posts Tagged - JavaScript | yanze yang &mdash; Software Developer " />
+    <title>Posts Tagged - React | yanze yang &mdash; Software Developer </title>
+    <meta property="og:title" content="Posts Tagged - React | yanze yang &mdash; Software Developer " />
+    <meta name="twitter:title" content="Posts Tagged - React | yanze yang &mdash; Software Developer " />
 
     <meta name="description" content="">
     <meta name="description" property="og:description" content="" />
@@ -17,7 +17,7 @@
     
     <meta name="twitter:site" content="@your_handler" />
     
-    <meta property="og:url" content="http://localhost:4000/tag/JavaScript/" />
+    <meta property="og:url" content="http://localhost:4000/tag/React/" />
 
     <meta property="og:image" content="" />
     <meta name="twitter:image" content="" />
@@ -96,7 +96,7 @@
     
     <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
-    <link rel="canonical" href="http://localhost:4000/tag/JavaScript/">
+    <link rel="canonical" href="http://localhost:4000/tag/React/">
 
     <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 </head>
@@ -169,99 +169,17 @@
 </div>
 
 
-                <h1>Posts Tagged - JavaScript</h1>
+                <h1>Posts Tagged - React</h1>
 
 
     
-        
-        <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            <header class="post-header">
-                <ul>
-                    <li><time datetime="2019-10-18T00:00:00+13:00" itemprop="datePublished">18 Oct, 2019</time></li>
-                    
-                </ul>
-                <h2 itemprop="name headline"><a href="http://localhost:4000/http-requests-in-node-using-axios.html">asycn/await & Promises: HTTP requests in Node using Axios</a></h2>
-            </header>
-
-            <div class="post-content">
-                <p>🧩Reference Link:</p>
-
-<ul>
-  <li><a href="https://flaviocopes.com/node-axios/">HTTP requests in Node using Axios</a></li>
-</ul>
-
-<h2 id="get-requests">GET requests</h2>
-<p>One convenient way to use Axios is to use the modern (ES2017) async/await syntax.</p>
-
-<p>This Node.js example queries the <a href="https://dog.ceo/">Dog API</a> to retrieve a list of all the dogs breeds, using axios.get(), and it counts them:</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">axios</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'axios'</span><span class="p">)</span>
-
-<span class="kd">const</span> <span class="nx">getBreeds</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="k">try</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="kr">await</span> <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="s1">'https://dog.ceo/api/breeds/list/all'</span><span class="p">)</span>
-  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">const</span> <span class="nx">countBreeds</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="nx">breeds</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">getBreeds</span><span class="p">()</span>
-
-  <span class="k">if</span> <span class="p">(</span><span class="nx">breeds</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Got </span><span class="p">${</span><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">breeds</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">message</span><span class="p">).</span><span class="nx">length</span><span class="p">}</span><span class="s2"> breeds`</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nx">countBreeds</span><span class="p">()</span>
-</code></pre></div></div>
-
-
-
-                
-                    <p><a href="/http-requests-in-node-using-axios.html" role="button">Read More</a></p>
-                
-            </div>
-
-            <footer class="post-footer">
-                <div class="share">Share
-                    <ul class="social-networks">
-                        <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=asycn/await & Promises: HTTP requests in Node using Axios&p[summary]=🧩Reference Link:
-
-
-  HTTP requests in Node using Axios
-
-
-GET requests
-One convenient way to use Axios is to use the modern (ES2017) async...&p[url]=http://localhost:4000/http-requests-in-node-using-axios.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                        <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/http-requests-in-node-using-axios.html&text=🧩Reference Link:
-
-
-  HTTP requests in Node using Axios
-
-
-GET requests
-One convenient way to use Axios is to use the modern (ES2017) async...&hashtags=JavaScript,Axios," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
-                    </ul>
-                </div>
-                
-                <div class="tags">
-                    <ul>
-                        
-                        <li><a href="http://localhost:4000/tag/JavaScript">JavaScript</a></li>
-                        
-                        <li><a href="http://localhost:4000/tag/Axios">Axios</a></li>
-                        
-                    </ul>
-                </div>
-                
-            </footer>
-        </article>
         
     
         
     
 
+    
+        
     
         
         <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -324,13 +242,13 @@ One convenient way to use Axios is to use the modern (ES2017) async...&hashtags=
         </article>
         
     
-        
-    
 
     
         
     
 
+    
+        
     
         
         <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -380,9 +298,9 @@ Currently, two ways are supported by React to refer to components. The first way
         </article>
         
     
-        
-    
 
+    
+        
     
         
         <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -447,64 +365,8 @@ Th...&hashtags=JavaScript,React," rel="noreferrer" target="_blank" onclick="wind
         </article>
         
     
-        
-    
 
     
-        
-        <article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            <header class="post-header">
-                <ul>
-                    <li><time datetime="2019-02-05T00:00:00+13:00" itemprop="datePublished">5 Feb, 2019</time></li>
-                    
-                </ul>
-                <h2 itemprop="name headline"><a href="http://localhost:4000/how-to-filter-an-array-with-another-array.html">How to filter an array with another array</a></h2>
-            </header>
-
-            <div class="post-content">
-                <p>🧩Reference link:</p>
-
-<ul>
-  <li><a href="https://www.freecodecamp.org/forum/t/how-to-filter-an-array-with-another-array/139352">How to filter an array with another array</a></li>
-</ul>
-
-
-
-                
-                    <p><a href="/how-to-filter-an-array-with-another-array.html" role="button">Read More</a></p>
-                
-            </div>
-
-            <footer class="post-footer">
-                <div class="share">Share
-                    <ul class="social-networks">
-                        <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How to filter an array with another array&p[summary]=🧩Reference link:
-
-
-  How to filter an array with another array
-
-
-&p[url]=http://localhost:4000/how-to-filter-an-array-with-another-array.html" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
-                        <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/how-to-filter-an-array-with-another-array.html&text=🧩Reference link:
-
-
-  How to filter an array with another array
-
-
-&hashtags=JavaScript," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
-                    </ul>
-                </div>
-                
-                <div class="tags">
-                    <ul>
-                        
-                        <li><a href="http://localhost:4000/tag/JavaScript">JavaScript</a></li>
-                        
-                    </ul>
-                </div>
-                
-            </footer>
-        </article>
         
     
 
