@@ -37,6 +37,8 @@ const countBreeds = async () => {
 countBreeds()
 ```
 
+<!--more-->
+
 If you don’t want to use async/await you can use the Promises syntax:
 
 ```js
