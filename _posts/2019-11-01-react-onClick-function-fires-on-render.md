@@ -17,7 +17,7 @@ List of objects to display
 delete function.
 I use a .map() function to display my list of objects(like in the example given in react tutorial page), but the button in that component fires the onClick function, on render(it should not fire on render time). My code looks like this:
 
-```js
+```jsx
 module.exports = React.createClass({
     render: function(){
         var taskNodes = this.props.todoTasks.map(function(todo){
@@ -43,6 +43,6 @@ My question is: Why does onClick function fire on render and how to make it not 
 
 Because you are calling that function instead of passing the function to onClick, change that line to this:
 
-```js
+```jsx
 <button type="submit" onClick={() => { this.props.removeTaskFunction(todo) }}>Submit</button>
 ```
