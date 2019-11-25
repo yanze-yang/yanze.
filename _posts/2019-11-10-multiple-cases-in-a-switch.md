@@ -8,7 +8,7 @@ tags:
 
 🧩Reference Link:
 
-- [Test for multiple cases in a switch, like an OR (||)](https://stackoverflow.com/questions/6513585/test-for-multiple-cases-in-a-switch-like-an-or/6514571)
+- [Test for multiple cases in a switch, like an OR](https://stackoverflow.com/questions/6513585/test-for-multiple-cases-in-a-switch-like-an-or/6514571)
 
 That works
 
