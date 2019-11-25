@@ -35,7 +35,7 @@ async getPropertiesList(groupId) {
   }
 ```
 
-<!-- more -->
+<!--more-->
 
 That won't work
 
