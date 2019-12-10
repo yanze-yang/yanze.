@@ -12,4 +12,4 @@ tags:
 
 🥥Demo:
 
-[CodeSandbox | Handling Multiple Inputs with a Single onChange Handler in React](https://codesandbox.io/s/beautiful-shirley-zbtqr?fontsize=14&hidenavigation=1&theme=dark)
+[CodeSandbox](https://codesandbox.io/s/beautiful-shirley-zbtqr?fontsize=14&hidenavigation=1&theme=dark)
