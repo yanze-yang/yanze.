@@ -13,6 +13,6 @@
 
 [moment.js](https://momentjs.com/)
 
-## 📎 Problems & Solution 
+## 📎 Problems & Solutions 
 
 [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
