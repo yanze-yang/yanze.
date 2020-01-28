@@ -9,6 +9,8 @@
 
 ## 🥃 Documentations
 
+[CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
+
 [axios](https://github.com/axios/axios)
 
 [moment.js](https://momentjs.com/)
