@@ -7,7 +7,7 @@
   <img height="40" src="images/js-react.png">
 </p>
 
-## 🥃 References
+## 🥃 Documentations
 
 [axios](https://github.com/axios/axios)
 
