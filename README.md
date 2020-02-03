@@ -33,3 +33,5 @@ In select element we don't have a placeholder attribute but we can add it by usi
 ```
 
 #### [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+`#javascript $dom`
