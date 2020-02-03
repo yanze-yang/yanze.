@@ -19,7 +19,7 @@
 
 [How to add a placeholder to select element in html](https://dev.to/saigowthamr/how-to-add-a-placeholder-to-select-element-in-html-hp8)
 
-> In select element we don't have a placeholder attribute but we can add it by using <option> element with `disabled`, `selected` and `hidden` attribute.
+In select element we don't have a placeholder attribute but we can add it by using <option> element with `disabled`, `selected` and `hidden` attribute.
   
 ```html
 <select>
