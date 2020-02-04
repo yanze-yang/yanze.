@@ -35,3 +35,9 @@ In select element we don't have a placeholder attribute but we can add it by usi
 #### [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
 `#javascript $dom`
+
+#### [Dynamic Form Fields in React](https://codesandbox.io/s/react-dynamic-form-fields-3fjbd?from-embed)
+
+#### [How to Build a Dynamic, Controlled Form with React Hooks (2019)](https://itnext.io/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f)
+
+`#react`
