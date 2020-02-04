@@ -17,9 +17,7 @@
 
 ## 📎 Problems & Solutions 
 
-#### [How to add a placeholder to select element in html](https://dev.to/saigowthamr/how-to-add-a-placeholder-to-select-element-in-html-hp8) 
-
-`#html`
+#### [How to add a placeholder to select element in html](https://dev.to/saigowthamr/how-to-add-a-placeholder-to-select-element-in-html-hp8) `#html`
 
 In select element we don't have a placeholder attribute but we can add it by using <option> element with `disabled`, `selected` and `hidden` attribute.
   
@@ -32,16 +30,10 @@ In select element we don't have a placeholder attribute but we can add it by usi
 </select>
 ```
 
-#### [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+#### [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) `#javascript $dom`
 
-`#javascript $dom`
+#### [Dynamic Form Fields in React](https://codesandbox.io/s/react-dynamic-form-fields-3fjbd?from-embed) `#react`
 
-#### [Dynamic Form Fields in React](https://codesandbox.io/s/react-dynamic-form-fields-3fjbd?from-embed)
+#### [How to Build a Dynamic, Controlled Form with React Hooks (2019)](https://itnext.io/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f) `#react`
 
-#### [How to Build a Dynamic, Controlled Form with React Hooks (2019)](https://itnext.io/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f)
-
-`#react`
-
-#### [How to Undo the Last Commit](https://code.likeagirl.io/how-to-undo-the-last-commit-393e7db2840b)
-
-`#git`
+#### [How to Undo the Last Commit](https://code.likeagirl.io/how-to-undo-the-last-commit-393e7db2840b) `#git`
