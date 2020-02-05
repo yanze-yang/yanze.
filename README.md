@@ -37,3 +37,5 @@ In select element we don't have a placeholder attribute but we can add it by usi
 #### [How to Build a Dynamic, Controlled Form with React Hooks (2019)](https://itnext.io/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f) `#react`
 
 #### [How to Undo the Last Commit](https://code.likeagirl.io/how-to-undo-the-last-commit-393e7db2840b) `#git`
+
+#### [What Are the Benefits of an Agile Workplace?](https://officeprinciples.com/agile-working/what-are-the-benefits-of-an-agile-workplace/)
