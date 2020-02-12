@@ -41,6 +41,20 @@ In select element we don't have a placeholder attribute but we can add it by usi
 
 #### [How to validate nested proptypes with React](https://www.javascriptstuff.com/validate-nested-proptypes/) `react`
 
+```javascript
+[{ foo: "hello", bar: 3, baz: true }, { foo: "world", bar: 7 }, { foo: ":)", bar: 0, baz: false }];
+```
+
+```jsx
+React.PropTypes.arrayOf(
+  React.PropTypes.shape({
+    foo: React.PropTypes.string.isRequired,
+    bar: React.PropTypes.number.isRequired,
+    baz: React.PropTypes.bool
+  })
+);
+```
+
 #### [How to Undo the Last Commit](https://code.likeagirl.io/how-to-undo-the-last-commit-393e7db2840b) `#git`
 
 #### [What Are the Benefits of an Agile Workplace?](https://officeprinciples.com/agile-working/what-are-the-benefits-of-an-agile-workplace/)
