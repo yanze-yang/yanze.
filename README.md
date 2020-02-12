@@ -7,6 +7,10 @@
   <img height="40" src="images/js-react.png">
 </p>
 
+## Posts
+
+[React Hooks, useReducer with a demo](./2020-02-10-usereducer.md)
+
 ## 🧪 Tutorials
 
 [What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
