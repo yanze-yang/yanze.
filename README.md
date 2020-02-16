@@ -3,10 +3,10 @@
 </p>
 
 --- 
+## ❄️ Posts
 
-<p align="center">
-  <img height="40" src="images/js-react.png">
-</p>
+### React & JavaScript
+
 
 [React Hooks, useReducer with a demo](./2020-02-10-usereducer.md)
 
