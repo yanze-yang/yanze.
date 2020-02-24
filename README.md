@@ -32,6 +32,10 @@
 
 ## 📎 Problems & Solutions 
 
+#### [How to better organize your React applications?](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
+
+#### [React Folder Structure](https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346)
+
 #### [How to add a placeholder to select element in html](https://dev.to/saigowthamr/how-to-add-a-placeholder-to-select-element-in-html-hp8) `#html`
 
 In select element we don't have a placeholder attribute but we can add it by using <option> element with `disabled`, `selected` and `hidden` attribute.
