@@ -18,7 +18,7 @@
 
 [What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
-## 🥃 Documentations
+## Documentations
 
 [CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 
@@ -30,7 +30,7 @@
 
 [NestJs](https://nestjs.com/)
 
-## 📎 Problems & Solutions 
+## 🥃 Problems & Solutions 
 
 #### [How to better organize your React applications?](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
 
