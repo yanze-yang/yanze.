@@ -48,6 +48,8 @@ In select element we don't have a placeholder attribute but we can add it by usi
   <option value="Angular">Angular</option>
 </select>
 ```
+#### [How to disable codelens in VS code?](https://stackoverflow.com/questions/34356510/how-to-disable-codelens-in-vs-code)
+
 #### [How to clean up subscriptions in react components using AbortController?](https://medium.com/@selvaganesh93/how-to-clean-up-subscriptions-in-react-components-using-abortcontroller-72335f19b6f7) `#react $useEffect`
 
 #### [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) `#javascript`
