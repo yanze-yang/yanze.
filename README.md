@@ -12,13 +12,13 @@
 
 ---
 
-## 🧪 Tutorials
+## 🍟 Cool Articles
 
 [The Hooks of React Router](https://css-tricks.com/the-hooks-of-react-router)
 
 [What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
-## Documentations
+## 📂 Documentations
 
 [CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 
