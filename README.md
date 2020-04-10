@@ -3,14 +3,11 @@
 </p>
 
 --- 
-## ❄️ Posts
+## 🥑 Posts
 
 ### React & JavaScript
 
-
 [React Hooks, useReducer with a demo](./2020-02-10-usereducer.md)
-
----
 
 ## 🍟 Cool Articles
 
@@ -18,7 +15,7 @@
 
 [What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
-## 📂 Documentations
+## 🌽 Documentations
 
 [CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 
