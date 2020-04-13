@@ -29,7 +29,9 @@
 
 ## 🥃 Problems & Solutions 
 
-#### [How to solve HTTP Error 500.30 - ANCM In-Process Start Failure](How-to-solve-HTTP-Error-500.30.md)
+#### [How to solve HTTP Error 500.30 - ANCM In-Process Start Failure](https://github.com/dotnet/aspnetcore/issues/6111)
+
+Use user *joaocolombo's* solution. The *majid23* might work.
 
 #### [How to better organize your React applications?](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
 
