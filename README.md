@@ -29,6 +29,8 @@
 
 ## 🥃 Problems & Solutions 
 
+#### [The difference between “require(x)” and “import x”](https://stackoverflow.com/questions/46677752/the-difference-between-requirex-and-import-x/46677972)
+
 #### [How to solve HTTP Error 500.30 - ANCM In-Process Start Failure](https://github.com/dotnet/aspnetcore/issues/6111)
 
 Use user *joaocolombo's* solution. The *majid23* might work.
