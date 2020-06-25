@@ -3,6 +3,12 @@
 </p>
 
 --- 
+
+## 🏗 Projects
+
+*building...* [Learn React](https://github.com/yanze-yang/learn-react)
+
+
 ## 🧀 Posts
 
 ### React & JavaScript
@@ -17,15 +23,7 @@
 
 ## 🥑 Documentations
 
-[CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
-
-[axios](https://github.com/axios/axios)
-
-[moment.js](https://momentjs.com/)
-
-[express.js](https://expressjs.com/)
-
-[NestJs](https://nestjs.com/)
+[CSS flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox) | [axios](https://github.com/axios/axios) | [moment.js](https://momentjs.com/) | [express.js](https://expressjs.com/) | [NestJs](https://nestjs.com/)
 
 ## 🥃 Problems & Solutions 
 
